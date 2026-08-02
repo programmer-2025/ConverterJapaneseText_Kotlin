@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="225.0" prefWidth="349.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25"
+      fx:controller="org.sample.converterjapanesetext_kotlin.HelloController">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="ファイル">
+            <MenuItem mnemonicParsing="false" text="閉じる"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="ヘルプ">
+            <MenuItem mnemonicParsing="false" text="このアプリについて"/>
+        </Menu>
+    </MenuBar>
+
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="変換前"/>
+    <TextField fx:id="afterConvertField"/>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="変換後"/>
+    <TextField fx:id="beforeConvertField" editable="false"/>
+    <Button mnemonicParsing="false" text="変換" onMouseClicked="#onClick"/>
+</VBox>
