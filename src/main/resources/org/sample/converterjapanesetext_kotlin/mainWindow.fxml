@@ -20,8 +20,9 @@
     </MenuBar>
 
     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="変換前"/>
-    <TextField fx:id="afterConvertField"/>
+    <TextField fx:id="beforeConvertField"/>
+
     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="変換後"/>
-    <TextField fx:id="beforeConvertField" editable="false"/>
+    <TextField fx:id="afterConvertField" editable="false"/>
     <Button mnemonicParsing="false" text="変換" onMouseClicked="#onClick"/>
 </VBox>
